@@ -90,7 +90,8 @@ export const HeroSection: React.FC = () => {
             </button>
             <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl bg-white text-gray-950 hover:bg-gray-100 hover:scale-105 transition-all duration-300'>
               <span>👋</span>
-              <span className='font-semibold'>Let's connect</span>
+              {/* Fixed apostrophe using HTML entity */}
+              <span className='font-semibold'>Let&apos;s connect</span>
             </button>
           </div>
         </div>
