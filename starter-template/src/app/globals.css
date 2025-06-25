@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    .nav-item {
+        @apply relative px-4 py-1.5 rounded-full text-sm font-medium text-white/70 transition-all duration-300 hover:text-white hover:bg-white/10;
+    }
+
+    .nav-item::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 9999px;
+        padding: 1px;
+        background: linear-gradient(45deg, transparent, rgba(16, 185, 129, 0.3), transparent);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: xor;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .nav-item:hover::before {
+        opacity: 1;
+    }
+    .hero-ring{
+        @apply absolute inset-0  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/10
+
+    }
+    @keyframes move-left {
+        to {
+            transform: translateX(-50%);
+        }
+   }
+
+   .animate-move-left {
+        animation: move-left linear infinite;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-gray-900 text-white font-sans antialiased;
+    }
+
+    .container {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .btn {
+        @apply inline-flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+    }
+
+    .btn-primary {
+        @apply bg-emerald-600 text-white hover:bg-emerald-700;
+    }
+
+    .btn-secondary {
+        @apply bg-gray-700 text-white hover:bg-gray-600;
+    }
+
+}
