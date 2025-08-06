@@ -6,7 +6,7 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
 import landing from "./landing.png";
 import legacy  from "./legacy.png";
-import cura from "./cur.png",
+import cura from "./cura.png",
 const portfolioProjects = [
   {
     company: "Self",
