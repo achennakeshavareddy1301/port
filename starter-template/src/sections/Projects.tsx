@@ -32,6 +32,18 @@ const portfolioProjects = [
     link: "https://github.com/achennakeshavareddy1301/ai-trip-planer-web",
     image: landing,
   },
+  {
+    company: "CURAVOICE",
+    year: "2023",
+    title: "A Medical Chat Bot",
+    results: [
+      { title: "Devlop a chat bot interface" },
+      { title: "Integrated goggle maps search api" },
+
+    ],
+    link: "https://github.com/achennakeshavareddy1301/ai-trip-planer-web",
+    image: cura,
+  },
 ];
 
 export const ProjectsSection = () => {
