@@ -57,5 +57,13 @@
     .btn-secondary {
         @apply bg-gray-700 text-white hover:bg-gray-600;
     }
+/* Hide horizontal scrollbars for WebKit-based browsers (Chrome, Safari, Edge) */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* WebKit (Chrome, Safari, Edge) */
+}
 }
