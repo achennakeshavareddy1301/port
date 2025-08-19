@@ -18,12 +18,19 @@ export const Header = () => {
         <a href="#about" className="nav-item group">
           <span>About</span>
         </a>
+                <a
+          href="#testimonials"
+          className="nav-item  group"
+        >
+          <span>certifications</span>
+        </a>
         <a 
           href="#contact" 
           className="nav-item bg-white text-gray-900 hover:bg-gradient-to-r hover:from-emerald-400 hover:to-sky-400 hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25 group"
         >
           <span>Contact</span>
         </a>
+
       </nav>
     </div>
   );
