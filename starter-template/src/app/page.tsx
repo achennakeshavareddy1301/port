@@ -4,8 +4,7 @@ import { ProjectsSection } from "@/sections/Projects";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
 import Footer from "@/sections/Footer";
-
-export default function Home() {
+import { Testimonials } from '@/sections/Testimonials';export default function Home() {
   return (
     <div>
       <Header />
@@ -13,6 +12,8 @@ export default function Home() {
       <div id="project"><ProjectsSection /></div>
       <div id="about"><About /></div>
       <div id="contact"><Contact /></div>
+      <div id="testimonials"><Testimonials /></div>
+      {/* Ensure the Footer is at the end */}
       <Footer />
     </div>
   );
